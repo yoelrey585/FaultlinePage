@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FAULTLINE — hip hop duo MiSTERSRADO × ede. Debut album 'Grown Ups' out now. Listen, explore the catalogue, back the duo." />
+    <title>FAULTLINE — MiSTERSRADO × ede | Official Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ── ambient layers ────────────────────────── -->
+    <div class="noise-layer"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ── header / nav ──────────────────────────── -->
+    <header class="site-head" id="siteHead">
+      <div class="utility-bar">
+        <div class="social-cluster">
+          <a href="#" class="social-ic" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="social-ic" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l5.5 5.5M20 20l-5.5-5.5M20 4L4 20"/><path d="M16 4l4 4-4 4M8 20l-4-4 4-4"/></svg>
+          </a>
+          <a href="#" class="social-ic" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </a>
+          <a href="#" class="social-ic" aria-label="Bandcamp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 8l4 4-4 4M16 8l-4 4 4 4"/></svg>
+          </a>
+        </div>
+        <a href="#" class="brand"><span class="zap">✦</span> faultline</a>
+        <div class="util-right">
+          <button class="util-btn" id="themeToggle" aria-label="Toggle theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+          <span class="util-sep"></span>
+          <button class="util-btn" id="searchToggle" aria-label="Toggle search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <span class="util-sep"></span>
+          <button class="burger" id="burgerToggle" aria-label="Toggle menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#grown-ups" class="nav-link">Grown Ups</a>
+        <a href="#discography" class="nav-link">Discography</a>
+        <a href="#support" class="nav-link">Support</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="search-drawer" id="searchDrawer">
+        <div class="search-inner">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Search the faultline..." aria-label="Search" />
+          <span class="search-meta">⌘K</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── mobile menu ────────────────────────────── -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="m-link"><span class="idx">01</span> About</a>
+      <a href="#grown-ups" class="m-link"><span class="idx">02</span> Grown Ups</a>
+      <a href="#discography" class="m-link"><span class="idx">03</span> Discography</a>
+      <a href="#support" class="m-link"><span class="idx">04</span> Support</a>
+      <a href="#contact" class="m-link"><span class="idx">05</span> Contact</a>
+      <div class="m-socials">
+        <a href="#" class="social-ic" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" class="social-ic" aria-label="X / Twitter">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l5.5 5.5M20 20l-5.5-5.5M20 4L4 20"/><path d="M16 4l4 4-4 4M8 20l-4-4 4-4"/></svg>
+        </a>
+        <a href="#" class="social-ic" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+        </a>
+        <a href="#" class="social-ic" aria-label="Bandcamp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 8l4 4-4 4M16 8l-4 4 4 4"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- ── HERO ────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="images/faultlineduo.png" alt="FAULTLINE — MiSTERSRADO × ede" />
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-inner">
+        <div>
+          <div class="hero-kicker">✦ hip hop duo · est. 2025 · worldwide</div>
+          <h1 class="hero-title">
+            <span class="l1">fault</span>
+            <span class="l2">line</span>
+          </h1>
+          <div class="hero-duo"><b>MiSTERSRADO</b> <span class="x">×</span> <b>ede</b></div>
+          <blockquote class="hero-quote">
+            <span class="qmark">“</span> "Grown Ups" is a reflection of energy, growth, and sound — a new era for Faultline. No polish left behind, nothing left polite. <span class="qmark">”</span>
+          </blockquote>
+          <div class="hero-ctas">
+            <a href="#grown-ups" class="btn btn-pink">✦ listen to grown ups</a>
+            <a href="#about" class="btn btn-ghost">meet the duo ↓</a>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <div class="hero-vertical">faultline · 2025</div>
+          <div class="hero-stats">
+            <div class="stat"><div class="num">1K+</div><div class="lbl">streams</div></div>
+            <div class="stat"><div class="num">1</div><div class="lbl">album</div></div>
+            <div class="stat"><div class="num">2</div><div class="lbl">releases</div></div>
+          </div>
+        </aside>
+      </div>
+      <div class="scroll-cue">
+        <span class="txt">scroll</span>
+        <div class="wire"></div>
+      </div>
+    </section>
+
+    <!-- ── ticker ──────────────────────────────────── -->
+    <div class="ticker">
+      <div class="ticker-track">
+        <span class="tick-item">✦ debut album <span class="hot">grown ups</span> out now</span>
+        <span class="tick-item alt">MiSTERSRADO × ede</span>
+        <span class="tick-item">✦ 1K+ streams and counting</span>
+        <span class="tick-item alt">faultline</span>
+        <span class="tick-item">✦ new single <span class="hot">blood and water</span> available</span>
+        <span class="tick-item alt">hip hop · experimental · raw</span>
+        <span class="tick-item">✦ est. 2025</span>
+      </div>
+    </div>
+
+    <!-- ── ABOUT ───────────────────────────────────── -->
+    <section class="section" id="about">
+      <div class="section-narrow">
+        <div class="about-head">
+          <div>
+            <div class="kicker"><span class="no">01</span> about</div>
+            <h2 class="h-big">the <span class="hollow">duo</span> <span class="pinkword">behind</span> the fault</h2>
+          </div>
+          <p class="lede"><b>FAULTLINE</b> is a collision of <b>MiSTERSRADO</b>'s gritty lyricism and <b>ede</b>'s ethereal production. Together they carve a space between hip hop, experimental, and raw emotion. Est. 2025, worldwide.</p>
+        </div>
+        <div class="duo-grid">
+          <div class="artist-card" style="--acc: var(--pink);">
+            <div class="artist-photo">
+              <img src="images/MiSTERSRADO.png" alt="MiSTERSRADO" />
+            </div>
+            <div class="artist-body">
+              <span class="artist-role">vocals · lyrics</span>
+              <h3 class="artist-name">MiSTERSRADO</h3>
+              <p class="artist-quote">"Every word is a crack in the pavement. That's where the light gets in."</p>
+              <ul class="artist-duties">
+                <li>vocals</li>
+                <li>lyrics</li>
+                <li>production</li>
+              </ul>
+            </div>
+          </div>
+          <div class="artist-card" style="--acc: var(--lime);">
+            <div class="artist-photo">
+              <img src="images/ede.png" alt="ede" />
+            </div>
+            <div class="artist-body">
+              <span class="artist-role">production · vocals</span>
+              <h3 class="artist-name">ede</h3>
+              <p class="artist-quote">"Texture is memory. Every beat holds a ghost."</p>
+              <ul class="artist-duties">
+                <li>production</li>
+                <li>vocals</li>
+                <li>sound design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="signal-panel">
+          <div>
+            <h4 class="signal-title">⚡ signal</h4>
+            <div class="meter"><div class="meter-top"><span>intensity</span><span class="val">88%</span></div><div class="meter-bar"><div class="meter-fill" style="--w:88%; --mcol:var(--pink);"></div></div></div>
+            <div class="meter"><div class="meter-top"><span>melancholy</span><span class="val">72%</span></div><div class="meter-bar"><div class="meter-fill" style="--w:72%; --mcol:var(--teal);"></div></div></div>
+            <div class="meter"><div class="meter-top"><span>chaos</span><span class="val">94%</span></div><div class="meter-bar"><div class="meter-fill" style="--w:94%; --mcol:var(--lime);"></div></div></div>
+          </div>
+          <div>
+            <div class="meter"><div class="meter-top"><span>hope</span><span class="val">63%</span></div><div class="meter-bar"><div class="meter-fill" style="--w:63%; --mcol:var(--emerald);"></div></div></div>
+            <div class="meter"><div class="meter-top"><span>glitch</span><span class="val">81%</span></div><div class="meter-bar"><div class="meter-fill" style="--w:81%; --mcol:var(--lime);"></div></div></div>
+            <div class="meter"><div class="meter-top"><span>reverb</span><span class="val">57%</span></div><div class="meter-bar"><div class="meter-fill" style="--w:57%; --mcol:var(--pink);"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GROWN UPS (ALBUM) ──────────────────────────── -->
+    <section class="section gu-section" id="grown-ups">
+      <div class="section-narrow gu-grid">
+        <div class="ep-cover-wrap">
+          <div class="ep-cover">
+            <img src="images/grownups.jpg" alt="Grown Ups album cover" />
+            <span class="tag">✦ debut album</span>
+          </div>
+          <div class="ep-caption">faultline 001 · <i>grown ups</i> · 2025</div>
+          <div class="gu-quote"><em>"The most honest work we've ever made."</em> — MiSTERSRADO</div>
+        </div>
+        <div>
+          <div class="player-shell">
+            <div class="player-head">
+              <span class="np-label"><span class="np-dot live"></span> now playing</span>
+              <span class="np-meta">grown ups · side a</span>
+            </div>
+            <div class="np-title">Grown Ups</div>
+            <div class="np-meta" style="margin-top: 4px;">MiSTERSRADO · ede</div>
+            <canvas class="viz-canvas" id="vizCanvas" height="92"></canvas>
+            <div class="seek-row">
+              <span class="time" id="currentTime">0:00</span>
+              <input type="range" class="fl-range" id="seekBar" min="0" max="100" value="0" step="0.1" aria-label="Seek" />
+              <span class="time" id="totalTime">3:42</span>
+            </div>
+            <div class="player-controls">
+              <button class="ctl-btn" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 20 9 12 19 4 19 20"/><rect x="5" y="4" width="3" height="16"/></svg></button>
+              <button class="ctl-play" id="playBtn" aria-label="Play">
+                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+              <button class="ctl-btn" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><rect x="16" y="4" width="3" height="16"/></svg></button>
+              <div class="vol-group">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                <input type="range" class="fl-range" id="volumeControl" min="0" max="100" value="85" step="1" aria-label="Volume" style="--vp:85%;" />
+              </div>
+            </div>
+          </div>
+          <div class="tracklist">
+            <button class="track-row current">
+              <span class="t-num">01</span>
+              <span class="t-name">Grown Ups</span>
+              <span class="t-sub">title track</span>
+              <span class="t-dur">3:42</span>
+              <span class="t-play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+            </button>
+            <button class="track-row">
+              <span class="t-num">02</span>
+              <span class="t-name">Kobby Loves Summer</span>
+              <span class="t-sub">ede's interlude</span>
+              <span class="t-dur">2:18</span>
+              <span class="t-play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+            </button>
+            <button class="track-row">
+              <span class="t-num">03</span>
+              <span class="t-name">Puddle of Rain</span>
+              <span class="t-sub">MiSTERSRADO's interlude</span>
+              <span class="t-dur">2:45</span>
+              <span class="t-play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+            </button>
+            <button class="track-row">
+              <span class="t-num">04</span>
+              <span class="t-name">Broken Clock</span>
+              <span class="t-sub">closer</span>
+              <span class="t-dur">4:12</span>
+              <span class="t-play"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DISCOGRAPHY ────────────────────────────── -->
+    <section class="section" id="discography">
+      <div class="section-narrow">
+        <div class="cat-head">
+          <div>
+            <div class="kicker"><span class="no">02</span> discography</div>
+            <h2 class="h-big">the <span class="hollow">fault</span> <span class="pinkword">archive</span></h2>
+          </div>
+          <div class="chips">
+            <button class="chip active">all <span class="cnt">2</span></button>
+            <button class="chip">albums <span class="cnt">1</span></button>
+            <button class="chip">singles <span class="cnt">1</span></button>
+          </div>
+        </div>
+        <div class="cat-grid">
+          <div class="cat-card feat" style="--acc: var(--pink);">
+            <div class="cat-art">
+              <div class="sleeve sleeve-a"></div>
+              <img src="/images/grownups.jpg" alt="Grown Ups" style="position:relative;z-index:1;width:100%;height:100%;object-fit:cover;mix-blend-mode:screen;opacity:0.6;" />
+              <span class="type-chip">album</span>
+              <span class="num">'25</span>
+              <span class="play-chip">✦ listen</span>
+            </div>
+            <div class="cat-meta">
+              <h3 class="cat-title">Grown Ups</h3>
+              <div class="cat-sub">faultline 001 · 2025</div>
+              <p class="cat-desc">The duo's debut album — 4 tracks exploring growth, memory, and the cracks we all carry.</p>
+            </div>
+          </div>
+          <div class="cat-card std" style="--acc: var(--teal);">
+            <div class="cat-art">
+              <div class="sleeve sleeve-b"></div>
+              <span class="type-chip">single</span>
+              <span class="num">'25</span>
+              <span class="play-chip">✦ listen</span>
+            </div>
+            <div class="cat-meta">
+              <h3 class="cat-title">Blood and Water</h3>
+              <div class="cat-sub">faultline 001s · 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-strip">
+          <div class="proj-row">
+            <span class="proj-idx">01</span>
+            <span class="proj-name">Grown Ups</span>
+            <span class="proj-desc">Debut album · 4 tracks</span>
+            <span class="proj-year">2025</span>
+            <span class="proj-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+          <div class="proj-row">
+            <span class="proj-idx">02</span>
+            <span class="proj-name">Blood and Water</span>
+            <span class="proj-desc">Single</span>
+            <span class="proj-year">2025</span>
+            <span class="proj-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SUPPORT ────────────────────────────────── -->
+    <section class="section support-section" id="support">
+      <div class="section-narrow support-grid">
+        <div>
+          <div class="kicker"><span class="no">03</span> support</div>
+          <h2 class="h-big">invest in <span class="pinkword">sound</span></h2>
+          <p class="lede" style="max-width:50ch;">Every contribution helps us keep the studio running, press vinyl, and fund the next record. <b>FAULTLINE</b> is independent — built by listeners like you.</p>
+          <ul class="perks">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Early access to all new music</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Exclusive demos &amp; stems</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Name in the liner notes</li>
+          </ul>
+        </div>
+        <div class="donate-card">
+          <span class="donate-label">✦ pledge</span>
+          <div class="donate-amount"><span class="cur">$</span> 10</div>
+          <div class="donate-note">usd · one‑time</div>
+          <div class="tiers">
+            <button class="tier active">$5</button>
+            <button class="tier">$10</button>
+            <button class="tier">$25</button>
+            <button class="tier">$50</button>
+          </div>
+          <input type="number" class="custom-amt" placeholder="Custom amount ($)" value="10" />
+          <button class="btn btn-pink donate-btn" id="donateBtn">✦ back the fault</button>
+          <div class="donate-fineprint">100% goes to <b>FAULTLINE</b> · 0% platform fees</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ─────────────────────────────────── -->
+    <section class="section" id="contact" style="border-top:1px solid var(--line);background:var(--bg-2);">
+      <div class="section-narrow" style="max-width:720px;text-align:center;">
+        <div class="kicker" style="justify-content:center;"><span class="no">04</span> contact</div>
+        <h2 class="h-big" style="margin-bottom:20px;">get in <span class="pinkword">touch</span></h2>
+        <p class="lede" style="max-width:48ch;margin:0 auto 30px;">For bookings, press inquiries, or just to say hello — we'd love to hear from you.</p>
+        <form style="display:grid;gap:14px;max-width:480px;margin:0 auto;text-align:left;">
+          <input type="text" placeholder="Your name" style="background:rgba(8,7,12,0.7);border:1px solid var(--line-2);color:var(--ink);padding:14px 16px;font-family:var(--font-body);font-size:0.95rem;outline:none;transition:border-color 0.2s;" />
+          <input type="email" placeholder="Your email" style="background:rgba(8,7,12,0.7);border:1px solid var(--line-2);color:var(--ink);padding:14px 16px;font-family:var(--font-body);font-size:0.95rem;outline:none;transition:border-color 0.2s;" />
+          <textarea rows="4" placeholder="Your message..." style="background:rgba(8,7,12,0.7);border:1px solid var(--line-2);color:var(--ink);padding:14px 16px;font-family:var(--font-body);font-size:0.95rem;outline:none;resize:vertical;transition:border-color 0.2s;"></textarea>
+          <button type="submit" class="btn btn-pink" style="justify-content:center;width:100%;">✦ send message</button>
+        </form>
+        <div style="margin-top:30px;display:flex;gap:24px;justify-content:center;flex-wrap:wrap;color:var(--muted);font-size:0.85rem;">
+          <span>📧 <a href="#" style="color:var(--ink);">hello@faultline.com</a></span>
+          <span>📍 Worldwide</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ──────────────────────────────────── -->
+    <footer class="footer">
+      <div class="news-strip">
+        <div class="news-title"><span>✦</span> stay in the fault</div>
+        <form class="news-form" id="newsletterForm">
+          <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+          <button type="submit" class="btn btn-pink" style="clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));border-radius:0;">→</button>
+        </form>
+        <span class="news-ok" id="newsOk" style="display:none;">✓ joined</span>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <div class="f-head">faultline</div>
+          <p class="f-blurb">MiSTERSRADO × ede · hip hop for the broken and the brave. Independent since 2025.</p>
+          <div class="f-socials" style="margin-top:16px;">
+            <a href="#" class="social-ic" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="social-ic" aria-label="X / Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l5.5 5.5M20 20l-5.5-5.5M20 4L4 20"/><path d="M16 4l4 4-4 4M8 20l-4-4 4-4"/></svg>
+            </a>
+            <a href="#" class="social-ic" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+            <a href="#" class="social-ic" aria-label="Bandcamp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 8l4 4-4 4M16 8l-4 4 4 4"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="f-head">music</div>
+          <ul class="f-links">
+            <li><a href="#grown-ups">Grown Ups (album)</a></li>
+            <li><a href="#discography">Discography</a></li>
+            <li><a href="#">Bandcamp</a></li>
+            <li><a href="#">Spotify</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="f-head">connect</div>
+          <ul class="f-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="f-head">studio</div>
+          <ul class="f-links">
+            <li><span class="em">faultline · worldwide</span></li>
+            <li><a href="#">Demo submission</a></li>
+            <li><button id="donateFooterBtn" style="background:none;border:none;color:var(--muted);font-family:var(--font-body);font-size:0.92rem;padding:0;text-align:left;cursor:pointer;">Support</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="giant-word">faultline</div>
+      <div class="footer-bottom">
+        <span>© 2025 faultline · all rights <span style="color:var(--pink);">cracked</span></span>
+        <span class="live-dot">studio live</span>
+        <span>built with ✦ on the fault</span>
+      </div>
+    </footer>
+
+    <!-- ── DONATION MODAL ──────────────────────────── -->
+    <div class="modal-veil" id="donateModal">
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose">✕</button>
+        <div class="check-ring">
+          <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" />
+            <path d="M30 50l14 14 26-28" />
+          </svg>
+        </div>
+        <h3>✦ thank you</h3>
+        <p class="sub">You're now part of the faultline. We'll keep you updated on the journey.</p>
+        <button class="btn btn-pink" id="modalDoneBtn" style="width:100%;justify-content:center;">done</button>
+      </div>
+    </div>
+
+    <script>
+      // ── CURSOR GLOW ──────────────────────────────────
+      const glow = document.getElementById('cursorGlow');
+      document.addEventListener('mousemove', (e) => {
+        glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+      });
+
+      // ── SCROLL PROGRESS ────────────────────────────
+      const progress = document.getElementById('scrollProgress');
+      document.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        progress.style.width = scrolled + '%';
+      });
+
+      // ── HEADER SCROLL STATE ────────────────────────
+      const head = document.getElementById('siteHead');
+      document.addEventListener('scroll', () => {
+        head.classList.toggle('scrolled', window.scrollY > 40);
+      });
+
+      // ── SEARCH TOGGLE ──────────────────────────────
+      const searchToggle = document.getElementById('searchToggle');
+      const searchDrawer = document.getElementById('searchDrawer');
+      searchToggle.addEventListener('click', () => {
+        searchDrawer.classList.toggle('open');
+        searchToggle.classList.toggle('active');
+        if (searchDrawer.classList.contains('open')) {
+          searchDrawer.querySelector('input').focus();
+        }
+      });
+
+      // ── BURGER TOGGLE ──────────────────────────────
+      const burger = document.getElementById('burgerToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('open');
+        mobileMenu.classList.toggle('open');
+        document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+      });
+      document.querySelectorAll('.mobile-menu .m-link').forEach(link => {
+        link.addEventListener('click', () => {
+          burger.classList.remove('open');
+          mobileMenu.classList.remove('open');
+          document.body.style.overflow = '';
+        });
+      });
+
+      // ── NAV LINKS ACTIVE STATE ─────────────────────
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+
+      // ── PLAY BUTTON ────────────────────────────────
+      const playBtn = document.getElementById('playBtn');
+      let isPlaying = false;
+      playBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        playBtn.innerHTML = isPlaying
+          ? '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>'
+          : '<svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
+      });
+
+      // ── TRACK ROW SELECTION ────────────────────────
+      document.querySelectorAll('.track-row').forEach(row => {
+        row.addEventListener('click', function() {
+          document.querySelectorAll('.track-row').forEach(r => r.classList.remove('current'));
+          this.classList.add('current');
+          const name = this.querySelector('.t-name')?.textContent || 'Track';
+          const sub = this.querySelector('.t-sub')?.textContent || '';
+          document.querySelector('.np-title').textContent = name;
+          document.querySelector('.np-meta').textContent = 'grown ups · ' + sub;
+          isPlaying = true;
+          playBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+        });
+      });
+
+      // ── VOLUME CONTROL ─────────────────────────────
+      const volControl = document.getElementById('volumeControl');
+      volControl.addEventListener('input', function() {
+        this.style.setProperty('--vp', this.value + '%');
+      });
+
+      // ── DISCOGRAPHY CHIPS ──────────────────────────
+      document.querySelectorAll('.chip').forEach(chip => {
+        chip.addEventListener('click', function() {
+          document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+
+      // ── DONATION TIERS ─────────────────────────────
+      document.querySelectorAll('.tier').forEach(tier => {
+        tier.addEventListener('click', function() {
+          document.querySelectorAll('.tier').forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+          const val = this.textContent.trim().replace('$', '');
+          document.querySelector('.custom-amt').value = val;
+          document.querySelector('.donate-amount .cur').textContent = '$';
+          document.querySelector('.donate-amount').innerHTML = `<span class="cur">$</span> ${val}`;
+        });
+      });
+
+      const customAmt = document.querySelector('.custom-amt');
+      customAmt.addEventListener('input', function() {
+        const val = this.value || '0';
+        document.querySelector('.donate-amount').innerHTML = `<span class="cur">$</span> ${val}`;
+        document.querySelectorAll('.tier').forEach(t => t.classList.remove('active'));
+      });
+
+      // ── DONATE MODAL ──────────────────────────────
+      const donateModal = document.getElementById('donateModal');
+      const modalClose = document.getElementById('modalClose');
+      const modalDoneBtn = document.getElementById('modalDoneBtn');
+
+      function openModal() {
+        donateModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal() {
+        donateModal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      document.getElementById('donateBtn').addEventListener('click', openModal);
+      document.getElementById('donateFooterBtn').addEventListener('click', openModal);
+      modalClose.addEventListener('click', closeModal);
+      modalDoneBtn.addEventListener('click', closeModal);
+      donateModal.addEventListener('click', (e) => {
+        if (e.target === donateModal) closeModal();
+      });
+
+      // ── NEWSLETTER FORM ────────────────────────────
+      const newsForm = document.getElementById('newsletterForm');
+      const newsOk = document.getElementById('newsOk');
+      newsForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const input = this.querySelector('input');
+        if (input.value.includes('@')) {
+          newsOk.style.display = 'flex';
+          setTimeout(() => { newsOk.style.display = 'none'; }, 3000);
+          input.value = '';
+        }
+      });
+
+      // ── VISUALIZER CANVAS ──────────────────────────
+      const canvas = document.getElementById('vizCanvas');
+      const ctx = canvas.getContext('2d');
+      const bars = 48;
+      const buffer = new Uint8Array(bars);
+
+      function drawBars() {
+        const w = canvas.width;
+        const h = canvas.height;
+        ctx.clearRect(0, 0, w, h);
+        const bw = w / bars;
+        for (let i = 0; i < bars; i++) {
+          const val = buffer[i] / 255;
+          const bh = Math.max(4, val * h * 0.85);
+          const x = i * bw;
+          const hue = 280 + val * 60;
+          ctx.fillStyle = `hsl(${hue}, 80%, 55%)`;
+          ctx.globalAlpha = 0.6 + val * 0.4;
+          ctx.fillRect(x, h - bh, bw * 0.65, bh);
+        }
+        ctx.globalAlpha = 1;
+        requestAnimationFrame(drawBars);
+      }
+
+      function updateBars() {
+        for (let i = 0; i < bars; i++) {
+          const r = Math.random();
+          buffer[i] = Math.floor(r * r * 255);
+        }
+        setTimeout(updateBars, 120);
+      }
+
+      function resizeCanvas() {
+        const rect = canvas.getBoundingClientRect();
+        canvas.width = rect.width || canvas.parentElement.clientWidth - 24 || 400;
+        canvas.height = 92;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      updateBars();
+      drawBars();
+
+      // ── KEYBOARD SHORTCUTS ─────────────────────────
+      document.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          searchToggle.click();
+        }
+        if (e.key === 'Escape') {
+          searchDrawer.classList.remove('open');
+          searchToggle.classList.remove('active');
+          if (mobileMenu.classList.contains('open')) {
+            burger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+            document.body.style.overflow = '';
+          }
+          if (donateModal.classList.contains('open')) {
+            closeModal();
+          }
+        }
+      });
+
+      // ── REVEAL ON SCROLL ──────────────────────────
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.artist-card, .signal-panel, .ep-cover-wrap, .player-shell, .cat-card, .proj-row, .donate-card, .support-grid .lede, .support-grid .perks').forEach(el => {
+        el.classList.add('rv');
+        observer.observe(el);
+      });
+
+      document.querySelectorAll('.meter-fill').forEach(el => {
+        const parent = el.closest('.meter');
+        if (parent) {
+          parent.classList.add('rv');
+          observer.observe(parent);
+        }
+      });
+
+      console.log('✦ FAULTLINE — DARK MATTER DESIGN SYSTEM loaded');
+    </script>
+  </body>
+</html>
